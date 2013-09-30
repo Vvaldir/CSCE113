@@ -20,7 +20,7 @@ void TrnsLog(int Account, vector<string> Trns){
 	for (int i(0); i<(Trns.size()); ++i)
 	{
 		std::cout << Trns[i];
-		if (i%4 == 0 && i != 0) { cout << "\n";}
-		if (i%4 != 0) {cout << "\t";}
+		if (i%5 == 0 && i != 0) { cout << "\n";}
+		if (i%5 != 0) {cout << "\t";}
 	}
 };
