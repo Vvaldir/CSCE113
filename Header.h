@@ -5,6 +5,7 @@
 using namespace std;
 
 //------------------------------------------------------------------------------//
+/*
 namespace ATM{
 
 struct Bank {
@@ -24,10 +25,10 @@ struct Bank {
 	void PrntCCt() {cout << CustomerCt() << endl;}				// Prints the number of Customers
 	void PrntTB() {cout << TotalBal(Accts) << endl; }			// Prints the total balance in the bank
 	*/
-private:
+/*private:
 	vector<Customer> Accts;		// The bank is built off of a vector of Accounts
 };
-
+*/
 //------------------------------------------------------------------------------//
 /*		// Obsolete
 struct Account {
