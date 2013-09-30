@@ -24,7 +24,7 @@ struct Bank {
 	void PrntTB() {cout << TotalBal(Accts) << endl; }					// Prints the total balance in the bank
 
 private:
-	vector<Account> Accts;		// The bank is built off of a vector of Accounts
+	vector<Customer> Accts;		// The bank is built off of a vector of Accounts
 };
 
 //------------------------------------------------------------------------------//
