@@ -15,14 +15,14 @@ struct Bank {
 	void CloseAcct();
 
 	// Raw Data
-	int CustomerCt() const {return Accts.size();}					// Counts the total number of Customers
+	int CustomerCt() const {return Accts.size();}			// Counts the total number of Customers
 	float TotalBal(vector<Customer> AcctVec);													
 
 	// Printers
 	/*
 	void AveBal() {cout << ( TotalBal(Accts)/CustomerCt() ) << endl;}	// Prints the average balance in the bank
-	void PrntCCt() {cout << CustomerCt() << endl;}					// Prints the number of Customers
-	void PrntTB() {cout << TotalBal(Accts) << endl; }					// Prints the total balance in the bank
+	void PrntCCt() {cout << CustomerCt() << endl;}				// Prints the number of Customers
+	void PrntTB() {cout << TotalBal(Accts) << endl; }			// Prints the total balance in the bank
 	*/
 private:
 	vector<Customer> Accts;		// The bank is built off of a vector of Accounts
@@ -31,13 +31,13 @@ private:
 //------------------------------------------------------------------------------//
 /*		// Obsolete
 struct Account {
-	Account();					// Default Constructor
+	Account();			// Default Constructor
 
-	void Transaction();			// Responsible for Withdrawal and Deposit Calls in Customer
+	void Transaction();		// Responsible for Withdrawal and Deposit Calls in Customer
 	void Transaction_Log();		// Prints out 10 previous Transactions (Calls TrnsLog in Customer)
 
 private:
-	class Customer;				// An account is built off of a Customer
+	class Customer;			// An account is built off of a Customer
 };
 */
 //------------------------------------------------------------------------------//
@@ -48,7 +48,7 @@ struct Statistics{
 	
 	void PrntAveBal() {cout << ( Bank::TotalBal(Accts)/Bank::CustomerCt() ) << endl;}	// Prints the average balance in the bank
 	void PrntCCt() {cout << Bank::CustomerCt() << endl;}					// Prints the number of Customers
-	void PrntTB() {cout << Bank::TotalBal(Bank::Accts) << endl; }					// Prints the total balance in the bank
+	void PrntTB() {cout << Bank::TotalBal(Bank::Accts) << endl; }				// Prints the total balance in the bank
 	
 };
 
