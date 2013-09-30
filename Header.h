@@ -28,7 +28,7 @@ private:
 };
 
 //------------------------------------------------------------------------------//
-
+/*		// Obsolete
 struct Account {
 	Account();					// Default Constructor
 
@@ -38,7 +38,7 @@ struct Account {
 private:
 	class Customer;				// An account is built off of a Customer
 };
-
+*/
 //------------------------------------------------------------------------------//
 
 class Customer {
