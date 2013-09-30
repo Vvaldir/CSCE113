@@ -5,9 +5,9 @@
 using namespace std;
 
 //------------------------------------------------------------------------------//
-/*
-namespace ATM{
 
+namespace ATM{
+/*
 struct Bank {
 	Bank();				// Default Constructor
 
@@ -42,7 +42,7 @@ private:
 };
 */
 //------------------------------------------------------------------------------//
-
+/*
 struct Statistics{
 	
 	Statistics();
@@ -52,7 +52,7 @@ struct Statistics{
 	void PrntTB() {cout << Bank::TotalBal(Bank::Accts) << endl; }				// Prints the total balance in the bank
 	
 };
-
+*/
 //------------------------------------------------------------------------------//
 
 class Customer {
