@@ -1,9 +1,15 @@
-#include "Header.h"
+#include "Bank.h"
 
-using namespace ATM;
+using namespace std;
+
+//------------------------------------------------------------------------------//
+
+namespace ATM{
 
 //------------------------------------------------------------------------------//
 
 Bank::Bank(){/* Initialize the Vector of Accounts to the data in the .txt file */}
 
 //------------------------------------------------------------------------------//
+
+}
