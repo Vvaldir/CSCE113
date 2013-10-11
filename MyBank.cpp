@@ -1,11 +1,20 @@
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-
+#include "Bank.h"
 
 using namespace std;
 
-void greet()
+void greet();
+
+void bank_stats();
+
+int main()
+{
+	ATM::Bank Bank = ATM::Bank::Bank();
+    greet(Bank);
+  
+  return 0;
+}
+
+void greet(ATM::Bank& Bank)
 {
     int menu;
     
@@ -22,31 +31,64 @@ void greet()
     switch (menu)
     {
         case 1: 
-            //open();
+            //OpenAcct();
             break;
             
         case 2:
-            //login();
+            //LogIn();
             break;
             
         case 3:
-            //bank_stats();
+            bank_stats();
             break;
             
         default:
         {
             cout<<"Please enter the number of the choice you want followed by the enterkey"<<endl;
-            cin;
             cin.clear();
             greet();
         }
     }
+    
 }
 
-int main()
+void bank_stats(ATM::Bank Bank)
 {
-    greet();
-
-	
-	return 0;
+    int menu;
+    
+    system("clear");
+    
+    cout<<"What would ye like to do?\n\n";
+    cout<<"\t1) See Average Balance\n\n";
+    cout<<"\t2) See number of Accounts\n\n";
+    cout<<"\t3) See Total Balance\n\n";
+    cout<<"\t4) Go back\n\n";
+    
+    cin>>menu;
+    
+    switch (menu)
+    {
+        case 1: 
+            Bank.AveBal();
+            break;
+            
+        case 2:
+            Bank.PrntCCt();
+            break;
+            
+        case 3:
+            Bank.PrntTB();
+            break;
+            
+        case 4:
+            greet(Bank);
+            break;
+            
+        default:
+        {
+            cout<<"Please enter the number of the choice you want followed by the enterkey"<<endl;
+            cin.clear();
+            bank_stats(Bank);
+        }
+    }
 }
